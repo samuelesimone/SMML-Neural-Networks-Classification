@@ -1,0 +1,24 @@
+\chapter{Neural Network Models} \label{ch:nnm}
+In this chapter we are going to examine the models that have been made in order to solve the binary classification task.
+All models were addrested using the principle of K-Fold cross validation. In this case the \texttt{K = 5} .
+
+\section{K-fold cross validation (K = 5)}
+
+\section{Multi-Layer Perceptron (MLP)}
+A multilayer perceptron (MLP) is a feedforward artificial neural network, consisting of fully connected neurons with a nonlinear kind of activation function, organized in at least three layers, notable for being able to distinguish data that is not linearly separable. \cite{mlp}
+During the project, I developed 3 different MLP models so that I could conduct different experiments and understand the performance of them.
+\subsection{First MLP Model}
+Here are the technical details of this setup:
+\begin{itemize}
+\item \texttt{inputs = tf.keras.Input(shape=input\_shape)}: model's input with the input\_shape size. In this case (128, 128, 3)
+\item \texttt{x = layers.Flatten()(inputs)}: Converts 2D input (an image) to a 1D vector
+\item \texttt{x = layers.Dense(256, activation='relu')(x)}: Fully connected layer (dense) with 256 neurons and ReLU activation
+\item \texttt{x = layers.Dropout(0.5)(x)}: This dropout layer introduces regularization into the network. The parameter 0.5 indicates that 50\% of the neurons exiting this layer are randomly switched off during training.
+\item \texttt{x = layers.Dense(128, activation='relu')(x)}: Other fully connected layer with 128 neurons and ReLU activation.
+\item \texttt{x = layers.Dropout(0.5)(x)}: Another dropout layer for further regularization.
+\item \texttt{activation = 'sigmoid'}: Here the activation function for the last layer is specified. In your case, you are using 'sigmoid,' which is commonly used in binary classification problems where the output must be a probability between 0 and 1 for each class.
+\item \texttt{outputs = layers.Dense(num\_classes, activation=activation)(x)}. 
+num\_classes = 1. This is the last layer of the model, which returns the output.
+\end{itemize}
+\section{Convolutional Neural Network (CNN)}
+\section{Deep Residual learning (ResNet50)}

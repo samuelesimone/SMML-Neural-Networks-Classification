@@ -5,4 +5,9 @@ Wikipedia.
 \newblock Data augmentation.
 \newblock \url{https://en.wikipedia.org/wiki/Data_augmentation}, 2023.
 
+\bibitem{mlp}
+Wikipedia.
+\newblock Multilayer perceptron.
+\newblock \url{https://en.wikipedia.org/wiki/Multilayer_perceptron}, 2023.
+
 \end{thebibliography}

@@ -2,4 +2,10 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
 \BOOKMARK [0][-]{chapter.2}{Dataset}{}% 3
 \BOOKMARK [1][-]{section.2.1}{Preprocessing}{chapter.2}% 4
-\BOOKMARK [0][-]{chapter*.2}{References}{}% 5
+\BOOKMARK [0][-]{chapter.3}{Neural\040Network\040Models}{}% 5
+\BOOKMARK [1][-]{section.3.1}{K-fold\040cross\040validation\040\(K\040=\0405\)}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.2}{Multi-Layer\040Perceptron\040\(MLP\)}{chapter.3}% 7
+\BOOKMARK [2][-]{subsection.3.2.1}{First\040MLP\040Model}{section.3.2}% 8
+\BOOKMARK [1][-]{section.3.3}{Convolutional\040Neural\040Network\040\(CNN\)}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.4}{Deep\040Residual\040learning\040\(ResNet50\)}{chapter.3}% 10
+\BOOKMARK [0][-]{chapter*.2}{References}{}% 11
