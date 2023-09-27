@@ -3,12 +3,34 @@ In this chapter we are going to examine the models that have been made in order 
 All models were addrested using the principle of K-Fold cross validation. In this case the \texttt{K = 5} .
 
 \section{K-fold cross validation (K = 5)}
-
+Cross-validation is a statistical method used to estimate the skill of machine learning models.The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation. When a specific value for k is chosen, it may be used in place of k in the reference to the model such as k=5 becoming 5-fold cross-validation, the one used in this project. \cite{kfold}.
+The general rules are the following:
+\begin{enumerate}
+\item Shuffle the dataset randomly
+\item Split the dataset into k groups
+\item For each group:
+\begin{itemize}
+\item Take the group as a hold out or test data set
+\item Take the remaining groups as a training data set
+\item Fit a model on the training set and evaluate it on the test set
+\item Retain the evaluation score and discard the model
+\end{itemize}
+\item Summarize the skill of the model using the sample of model evaluation scores
+\end{enumerate}
+Let's take a look at its mathematical formalization.
+Let $S$ be our entire dataset \cite{kfoldmath}. We partition $S$ in $K$ subsets (also known as folds) $S_1, \ldots, S_K$ of size $m / K$ each (assume for simplicity that $K$ divides $m$).The $K$-fold $C V$ estimate of $\mathbb{E}\left[\ell_{\mathcal{D}}(A)\right]$ on $S$, denoted by $\ell_S^{\mathrm{cv}}(A)$, is then computed as follows: we run $A$ on each training part $S_{-i}$ of the folds $i=1, \ldots, K$ and obtain the predictors $h_1=$ $A\left(S_{-i}\right), \ldots, h_K=A\left(S_{-K}\right)$. We then compute the (rescaled) errors on the testing part of each fold,
+$$
+\ell_{S_i}\left(h_i\right)=\frac{K}{m} \sum_{(\boldsymbol{x}, y) \in S_i} \ell\left(y, h_i(\boldsymbol{x})\right)
+$$
+Finally, we compute the CV estimate by averaging these errors
+$$
+\ell_S^{\mathrm{cv}}(A)=\frac{1}{K} \sum_{i=1}^K \ell_{S_i}\left(h_i\right)
+$$
 \section{Multi-Layer Perceptron (MLP)}
 A multilayer perceptron (MLP) is a feedforward artificial neural network, consisting of fully connected neurons with a nonlinear kind of activation function, organized in at least three layers, notable for being able to distinguish data that is not linearly separable. \cite{mlp}
 During the project, I developed 3 different MLP models so that I could conduct different experiments and understand the performance of them.
 \subsection{First MLP Model}
-Here are the technical details of this setup:
+Here are the MLP architecture:
 \begin{itemize}
 \item \texttt{inputs = tf.keras.Input(shape=input\_shape)}: model's input with the input\_shape size. In this case (128, 128, 3)
 \item \texttt{x = layers.Flatten()(inputs)}: Converts 2D input (an image) to a 1D vector
@@ -19,6 +41,18 @@ Here are the technical details of this setup:
 \item \texttt{activation = 'sigmoid'}: Here the activation function for the last layer is specified. In your case, you are using 'sigmoid,' which is commonly used in binary classification problems where the output must be a probability between 0 and 1 for each class.
 \item \texttt{outputs = layers.Dense(num\_classes, activation=activation)(x)}. 
 num\_classes = 1. This is the last layer of the model, which returns the output.
+Then these are the technical details of the setup:
+\begin{itemize}
+\item \texttt{batch\_size =  32}. Indicates how many data examples are processed together before updating the weights.
+\item \texttt{optimizer='adam'}. The optimizer is the algorithm that adjusts the model weights during training to minimize the cost function. It is a stochastic gradient descent method.
+\item \texttt{loss = 'binary\_crossentropy'}. It specifies the cost function (or loss function) that will be used to evaluate how well the model is fitting the data during training. This cross-entropy loss is user for binary (0 or 1) classification applications.
+\item \texttt{metrics=[zero\_one\_loss\_func]}: this param specifies the evaluation metrics that will be calculated during model training. In this case I used a custom function called \texttt{zero\_one\_loss\_func}. It requires two parameters: \texttt{y\_true} , the real associated label and the \texttt{y\_pred}, the ones predicted by the model. Then:
+\begin{itemize}
+\item Transforms predicted probabilities into binary labels (0 or 1)
+\item Compare the predicted binary labels with the actual labels
+\item Calculate the zero-one loss as the average of the errors.
+\end{itemize}
+\end{itemize}
 \end{itemize}
 \section{Convolutional Neural Network (CNN)}
 \section{Deep Residual learning (ResNet50)}

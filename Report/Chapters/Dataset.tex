@@ -1,5 +1,5 @@
 \chapter{Dataset} \label{ch:dataset}
-The dataset under consideration is called "Muffin vs Chihuahua", taken from Kaggle \ref{}.
+The dataset under consideration is called "Muffin vs Chihuahua", taken from Kaggle \cite{kaggle}.
 It consists of about 6000 images taken from Google Images. Duplicate images have been removed.
 The first operation that was performed was to download the dataset through the Kaggle API and divide the dataset into training set and test set. After that, thanks to the Tensorflow library and specifically Keras, the images were loaded so that the neural networks could be trained. Here the code for the train\_images loading using \texttt{tf.keras.utils.image\_dataset\_from\_directory}
 \begin{lstlisting}[language=Python]

@@ -1,9 +1,27 @@
 \begin{thebibliography}{1}
 
+\bibitem{kaggle}
+Samuel Cortinhas.
+\newblock muffin-vs-chihuahua-image-classification.
+\newblock
+  \url{https://www.kaggle.com/datasets/samuelcortinhas/muffin-vs-chihuahua-image-classification},
+  2023.
+
 \bibitem{dataaug}
 Wikipedia.
 \newblock Data augmentation.
 \newblock \url{https://en.wikipedia.org/wiki/Data_augmentation}, 2023.
+
+\bibitem{kfold}
+Jason Brownlee.
+\newblock A gentle introduction to k-fold cross-validation.
+\newblock \url{https://machinelearningmastery.com/k-fold-cross-validation/},
+  2020.
+
+\bibitem{kfoldmath}
+Nicolò Cesa-Bianchi.
+\newblock Hyperparameter tuning and risk estimates.
+\newblock \url{https://cesa-bianchi.di.unimi.it/MSA/Notes/crossVal.pdf}, 2023.
 
 \bibitem{mlp}
 Wikipedia.
