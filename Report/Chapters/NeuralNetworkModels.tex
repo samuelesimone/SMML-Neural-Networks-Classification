@@ -1,6 +1,6 @@
 \chapter{Neural Network Models} \label{ch:nnm}
 In this chapter we are going to examine the models that have been made in order to solve the binary classification task.
-All models were addrested using the principle of K-Fold cross validation. In this case the \texttt{K = 5} .
+All models were trained using the principle of K-Fold cross validation. In this case the \texttt{K = 5}. For the results of the experiments please refer to the Chapter \ref{ch:experiments} while for the discussion of the experiments please refer to the Chapter \ref{ch:discussion}.
 
 \section{K-fold cross validation (K = 5)}
 Cross-validation is a statistical method used to estimate the skill of machine learning models.The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation. When a specific value for k is chosen, it may be used in place of k in the reference to the model such as k=5 becoming 5-fold cross-validation, the one used in this project. \cite{kfold}.
@@ -54,5 +54,21 @@ Then these are the technical details of the setup:
 \end{itemize}
 \end{itemize}
 \end{itemize}
+\subsection{Hypertuning parameter for MLP}
+Hyper-parameters are parameters that are not directly learnt within estimators.
+In order to obtain better results I decided to do an hypertuning of the params using the \textbf{GridSearchCV} from the library \texttt{sklearn.model\_selection}.  GridSearchCV exhaustively considers all parameter combinations from a paramater grid \cite{scikitgs}.
+Due the amount of the time spent for the exhaustive combination I choose just two different learning rate \texttt{0.001} and  \texttt{0.01}.
+After wrapping the mlp keras into a KerasClassifier I can integrate the scikit-learn flow and run GridSearch. Here the results:
+\begin{lstlisting}
+Highest score is 0.5403 with {'learning_rate': 0.001, 'optimizer': <class 'keras.optimizers.adam.Adam'>} 
+
+List in descending order:
+0.5403 --> {'learning_rate': 0.001, 'optimizer': <class 'keras.optimizers.adam.Adam'>} 
+0.5119 --> {'learning_rate': 0.01, 'optimizer': <class 'keras.optimizers.adam.Adam'>} 
+\end{lstlisting}
+So in this case with a learning rate of \texttt{0.001} the accuracy is better.
+\subsection{First MLP Model after Hypertuning}
+I trained the same mlp but with different learning rate as discussed above.
+The results are quite similar as you can see from the Table \ref{table:mlp1hyp} so I spent some times to create other two mlp architecture.
 \section{Convolutional Neural Network (CNN)}
 \section{Deep Residual learning (ResNet50)}

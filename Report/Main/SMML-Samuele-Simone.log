@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  27 SEP 2023 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  27 SEP 2023 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,7 @@ LaTeX Info: Redefining \nameref on input line 89.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../Images/unimi.pdf): PDF in
 clusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../Images/unimi.pdf, id=54, 44.061pt x 44.11281pt>
+<../Images/unimi.pdf, id=62, 44.061pt x 44.11281pt>
 File: ../Images/unimi.pdf Graphic file (type pdf)
 <use ../Images/unimi.pdf>
 Package pdftex.def Info: ../Images/unimi.pdf  used on input line 92.
@@ -612,7 +612,7 @@ Chapter 2.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-<../Images/sampleimages.png, id=107, 593.21625pt x 609.27625pt>
+<../Images/sampleimages.png, id=117, 593.21625pt x 609.27625pt>
 File: ../Images/sampleimages.png Graphic file (type png)
 <use ../Images/sampleimages.png>
 Package pdftex.def Info: ../Images/sampleimages.png  used on input line 28.
@@ -621,7 +621,7 @@ Package pdftex.def Info: ../Images/sampleimages.png  used on input line 28.
 
 ]
 [3 <../Images/sampleimages.png>]
-<../Images/dataaug.png, id=142, 595.22375pt x 595.22375pt>
+<../Images/dataaug.png, id=152, 595.22375pt x 595.22375pt>
 File: ../Images/dataaug.png Graphic file (type png)
 <use ../Images/dataaug.png>
 Package pdftex.def Info: ../Images/dataaug.png  used on input line 46.
@@ -634,6 +634,9 @@ cmr/m/n/12 op-ti-mizes the data
 
 [4 <../Images/dataaug.png>]) (../Chapters/NeuralNetworkModels.tex [5]
 Chapter 3.
+
+LaTeX Warning: Reference `ch:discussion' on page 6 undefined on input line 3.
+
 [6
 
 ] [7]
@@ -642,7 +645,7 @@ Overfull \hbox (54.35574pt too wide) in paragraph at lines 42--45
 x)\OT1/cmr/m/n/12 . num[]classes
  []
 
-) (../Chapters/Experiments.tex [8]
+[8]) (../Chapters/Experiments.tex [9]
 Chapter 4.
 
 Overfull \hbox (0.80362pt too wide) in alignment at lines 4--9
@@ -669,9 +672,34 @@ Overfull \hbox (0.80362pt too wide) in alignment at lines 22--80
  [] [] [] [] [] [] 
  []
 
-[9
+[10
 
-]) (./SMML-Samuele-Simone.bbl [10]
+]
+Overfull \hbox (6.67856pt too wide) in alignment at lines 82--87
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.67856pt too wide) in alignment at lines 87--93
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.67856pt too wide) in alignment at lines 93--97
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.67856pt too wide) in alignment at lines 97--100
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.67856pt too wide) in alignment at lines 100--157
+ [] [] [] [] [] [] 
+ []
+
+[11] [12]) (./SMML-Samuele-Simone.bbl [13]
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 []\OT1/cmr/m/n/12 Samuel Cort-in-has.  muffin-vs-chihuahua-image-classification
 .
@@ -689,20 +717,23 @@ Underfull \hbox (badness 1454) in paragraph at lines 27--30
  https : / / en . wikipedia . org / wiki /
  []
 
-) [11
+) [14
 
 ] (./SMML-Samuele-Simone.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `SMML-Samuele-Simone.out' has not changed.
-(rerunfilecheck)             Checksum: DDA189AB992648F27BD126353F285193;776.
+(rerunfilecheck)             Checksum: 5FFA6856C14C1305B1D555465C12B39D;967.
  ) 
 Here is how much of TeX's memory you used:
- 17597 strings out of 478268
- 271197 string characters out of 5846347
- 806830 words of memory out of 5000000
- 35453 multiletter control sequences out of 15000+600000
+ 17627 strings out of 478268
+ 271568 string characters out of 5846347
+ 806995 words of memory out of 5000000
+ 35470 multiletter control sequences out of 15000+600000
  480463 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,8n,79p,659b,2377s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,8n,79p,659b,3435s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -723,9 +754,9 @@ ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texliv
 e/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on SMML-Samuele-Simone.pdf (14 pages, 4220007 bytes).
+Output written on SMML-Samuele-Simone.pdf (17 pages, 4234606 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 351 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

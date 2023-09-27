@@ -28,4 +28,9 @@ Wikipedia.
 \newblock Multilayer perceptron.
 \newblock \url{https://en.wikipedia.org/wiki/Multilayer_perceptron}, 2023.
 
+\bibitem{scikitgs}
+Scikit Learn.
+\newblock Tuning the hyper-parameters of an estimator.
+\newblock \url{https://scikit-learn.org/stable/modules/grid_search.html}, 2023.
+
 \end{thebibliography}
