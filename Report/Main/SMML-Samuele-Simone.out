@@ -8,7 +8,9 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{First\040MLP\040Model}{section.3.2}% 8
 \BOOKMARK [2][-]{subsection.3.2.2}{Hypertuning\040parameter\040for\040MLP}{section.3.2}% 9
 \BOOKMARK [2][-]{subsection.3.2.3}{First\040MLP\040Model\040after\040Hypertuning}{section.3.2}% 10
-\BOOKMARK [1][-]{section.3.3}{Convolutional\040Neural\040Network\040\(CNN\)}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.4}{Deep\040Residual\040learning\040\(ResNet50\)}{chapter.3}% 12
-\BOOKMARK [0][-]{chapter.4}{Experiments}{}% 13
-\BOOKMARK [0][-]{chapter*.2}{References}{}% 14
+\BOOKMARK [2][-]{subsection.3.2.4}{Second\040MLP\040Model}{section.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.2.5}{Third\040MLP\040Model}{section.3.2}% 12
+\BOOKMARK [1][-]{section.3.3}{Convolutional\040Neural\040Network\040\(CNN\)}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.4}{Deep\040Residual\040learning\040\(ResNet50\)}{chapter.3}% 14
+\BOOKMARK [0][-]{chapter.4}{Experiments}{}% 15
+\BOOKMARK [0][-]{chapter*.2}{References}{}% 16
