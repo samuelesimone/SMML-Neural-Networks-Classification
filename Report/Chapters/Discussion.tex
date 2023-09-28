@@ -1,0 +1,12 @@
+\chapter{Discussion} \label{ch:discussion}
+After running several experiments with different learning models here is what can be deduced:
+\begin{itemize}
+\item MLPs as architectures fail to extrapolate image information and consequently does not produce correct classification. In fact going to look at the values reported in the various tables shows that the loss is very high and the classification is at "random"
+\item Even changing MLP architecture fails to extrapolate the features needed for recognition
+\item Using GridSearch for hypertraining has been useful although, applied to MLPs the change is minimal
+\item Instead, with regard to Cross Validation, its use is recommended to obtain accurate estimates of model performance and reduce the risk of selecting models that perform well on only a specific subset of data 
+\item Changing architecture instead and switching to a CNN we get good results. Images are correctly classified even though it can sometimes make mistakes. In fact, CNNs are specialized when deal with a grid-like data type, such as images
+\item CNN performed well during even the testing phase by solving the Muffin vs. Chihuahua binary classification problem.
+\item I also tried another model called ResNet50, which being a deep architecture, taking advantage of transfer learning manages to solve this problem comfortably.  However, using such a deep model might be overkill and not suitable for problems of this simplicity
+\item I conclude by saying that there is no need to create architectures with a lot of layers when in fact simpler solutions can lead us to solve the problem using less computational resources.
+\end{itemize}

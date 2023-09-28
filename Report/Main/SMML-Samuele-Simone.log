@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  28 SEP 2023 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  28 SEP 2023 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,7 @@ LaTeX Info: Redefining \nameref on input line 89.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../Images/unimi.pdf): PDF in
 clusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../Images/unimi.pdf, id=78, 44.061pt x 44.11281pt>
+<../Images/unimi.pdf, id=82, 44.061pt x 44.11281pt>
 File: ../Images/unimi.pdf Graphic file (type pdf)
 <use ../Images/unimi.pdf>
 Package pdftex.def Info: ../Images/unimi.pdf  used on input line 92.
@@ -612,7 +612,7 @@ Chapter 2.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-<../Images/sampleimages.png, id=137, 593.21625pt x 609.27625pt>
+<../Images/sampleimages.png, id=142, 593.21625pt x 609.27625pt>
 File: ../Images/sampleimages.png Graphic file (type png)
 <use ../Images/sampleimages.png>
 Package pdftex.def Info: ../Images/sampleimages.png  used on input line 28.
@@ -621,7 +621,7 @@ Package pdftex.def Info: ../Images/sampleimages.png  used on input line 28.
 
 ]
 [3 <../Images/sampleimages.png>]
-<../Images/dataaug.png, id=172, 595.22375pt x 595.22375pt>
+<../Images/dataaug.png, id=177, 595.22375pt x 595.22375pt>
 File: ../Images/dataaug.png Graphic file (type png)
 <use ../Images/dataaug.png>
 Package pdftex.def Info: ../Images/dataaug.png  used on input line 46.
@@ -634,13 +634,10 @@ cmr/m/n/12 op-ti-mizes the data
 
 [4 <../Images/dataaug.png>]) (../Chapters/NeuralNetworkModels.tex [5]
 Chapter 3.
-
-LaTeX Warning: Reference `ch:discussion' on page 6 undefined on input line 3.
-
 [6
 
 ] [7] [8] [9]
-<../Images/cnnarch.png, id=240, 682.55pt x 257.96375pt>
+<../Images/cnnarch.png, id=246, 682.55pt x 257.96375pt>
 File: ../Images/cnnarch.png Graphic file (type png)
 <use ../Images/cnnarch.png>
 Package pdftex.def Info: ../Images/cnnarch.png  used on input line 170.
@@ -669,7 +666,7 @@ Overfull \hbox (0.46066pt too wide) in paragraph at lines 188--189
 p-ti-mizer is the al-go-rithm
  []
 
-<../Images/resnet50arch.png, id=255, 1405.25pt x 452.69125pt>
+<../Images/resnet50arch.png, id=261, 1405.25pt x 452.69125pt>
 File: ../Images/resnet50arch.png Graphic file (type png)
 <use ../Images/resnet50arch.png>
 Package pdftex.def Info: ../Images/resnet50arch.png  used on input line 203.
@@ -708,10 +705,6 @@ Overfull \hbox (0.46066pt too wide) in paragraph at lines 225--226
 []\OT1/cmtt/m/n/12 optimizer=keras.optimizers.Adam(1e-3)\OT1/cmr/m/n/12 . The o
 p-ti-mizer is the al-go-rithm
  []
-
-
-LaTeX Warning: Reference `table:resnet50' on page 14 undefined on input line 22
-8.
 
 ) (../Chapters/Experiments.tex [14]
 Chapter 4.
@@ -792,7 +785,11 @@ Overfull \hbox (9.94241pt too wide) in alignment at lines 258--315
  [] [] [] [] [] [] 
  []
 
-[19] [20]) (./SMML-Samuele-Simone.bbl [21]
+[19] [20]) (../Chapters/Discussion.tex [21]
+Chapter 5.
+[22
+
+]) (./SMML-Samuele-Simone.bbl [23]
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 []\OT1/cmr/m/n/12 Samuel Cort-in-has.  muffin-vs-chihuahua-image-classification
 .
@@ -821,23 +818,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--42
 tascience . com /
  []
 
-) [22
+) [24
 
 ] (./SMML-Samuele-Simone.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `SMML-Samuele-Simone.out' has not changed.
-(rerunfilecheck)             Checksum: 8E85A9C63406C63292ADAC972148D812;1255.
+(rerunfilecheck)             Checksum: 027A63D8E0462E488B3EA473FA51A056;1301.
  ) 
 Here is how much of TeX's memory you used:
- 17669 strings out of 478268
- 272243 string characters out of 5846347
- 807290 words of memory out of 5000000
- 35492 multiletter control sequences out of 15000+600000
+ 17679 strings out of 478268
+ 272437 string characters out of 5846347
+ 807359 words of memory out of 5000000
+ 35496 multiletter control sequences out of 15000+600000
  480463 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,8n,79p,1016b,3435s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -861,9 +852,9 @@ ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texliv
 e/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on SMML-Samuele-Simone.pdf (25 pages, 4704450 bytes).
+Output written on SMML-Samuele-Simone.pdf (27 pages, 4708154 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
