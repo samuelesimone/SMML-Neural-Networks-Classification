@@ -16,4 +16,9 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{ResNet50\040Model}{section.3.4}% 16
 \BOOKMARK [0][-]{chapter.4}{Experiments}{}% 17
 \BOOKMARK [0][-]{chapter.5}{Discussion}{}% 18
-\BOOKMARK [0][-]{chapter*.2}{References}{}% 19
+\BOOKMARK [0][-]{section*.2}{Appendices}{}% 19
+\BOOKMARK [0][-]{appendix.1.A}{Multi\040layer\040perceptron\040\(First\040MLP\)\040charts}{}% 20
+\BOOKMARK [0][-]{appendix.1.B}{Multi\040layer\040perceptron\040\(First\040MLP\040after\040hypertuning\)\040charts}{}% 21
+\BOOKMARK [0][-]{appendix.1.C}{Convolutional\040Neural\040Network\040\(CNN\)\040charts}{}% 22
+\BOOKMARK [0][-]{appendix.1.D}{Deep\040Residual\040Learning\040\(ResNet50\)\040charts}{}% 23
+\BOOKMARK [0][-]{appendix*.3}{References}{}% 24

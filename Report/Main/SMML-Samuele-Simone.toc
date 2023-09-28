@@ -17,4 +17,9 @@
 \contentsline {subsection}{\numberline {3.4.1}ResNet50 Model}{13}{subsection.3.4.1}%
 \contentsline {chapter}{\numberline {4}Experiments}{15}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Discussion}{22}{chapter.5}%
-\contentsline {chapter}{References}{24}{chapter*.2}%
+\contentsline {chapter}{Appendices}{24}{section*.2}%
+\contentsline {chapter}{\numberline {A}Multi layer perceptron (First MLP) charts}{25}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}Multi layer perceptron (First MLP after hypertuning) charts}{27}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}Convolutional Neural Network (CNN) charts}{31}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}Deep Residual Learning (ResNet50) charts}{35}{appendix.1.D}%
+\contentsline {chapter}{References}{37}{appendix*.3}%
