@@ -169,5 +169,29 @@ A \textbf{Convolutional Neural Network}, also known as CNN or ConvNet, is a clas
 \centering
 \includegraphics[scale=0.5]{../Images/cnnarch.png}
 \end{figure}
-
+During the project, I trained a CNN model to solve the binary classification problem. Here are the details of the architecture:
+\begin{itemize}
+\item \texttt{inputs = tf.keras.Input(shape=input\_shape)}. Define a input layer for the model. 
+\item \texttt{x = layers.Rescaling(1.0 / 255)(inputs)}. Rescaling for pixel normalization.
+\item \texttt{x = layers.Conv2D(128, 3, strides=2, padding="same", activation="relu")(x)}. This is a 2D convolution layer with 128 filters, a kernel size of 3x3, a stride of 2 (i.e., displacement of 2 pixels at a time), and a ReLU activation function. This layer extracts features from the image.
+\item \texttt{x = layers.MaxPooling2D(3, strides=2, padding="same")(x)}.This is a 2D max-pooling layer with a pool size of 3x3, a stride of 2, and equal "padding." Max-pooling reduces the size of the feature maps extracted from the convolution layer.
+\item \texttt{Middle block the same of the previous two step}.
+\item \texttt{x = layers.GlobalAveragePooling2D()(x)}.This layer performs "Global Average Pooling" on the resulting feature maps. Global Average Pooling calculates the average of the values in each feature map, producing a compact representation of the features.
+\item \texttt{x = layers.Dropout(0.5)(x)}. This is a dropout level that helps prevent overfitting. It randomly deactivates 50\% of the neurons during training.
+\item \texttt{activation = "sigmoid"}.The activation function for the output layer is defined as "sigmoid," which is commonly used for binary classification problems.
+\item \texttt{outputs = layers.Dense(num\_classes, activation=activation)(x)}.this is the output layer that produces the final predictions of the model. The number of neurons corresponds to the number of classes specified by the num\_classes parameter, and the activation function is "sigmoid" for the binary classification problem.
+\end{itemize}
+Then these are the technical details of the setup:
+\begin{itemize}
+\item \texttt{batch\_size =  32}. Indicates how many data examples are processed together before updating the weights.
+\item \texttt{optimizer=keras.optimizers.Adam(1e-3)}. The optimizer is the algorithm that adjusts the model weights during training to minimize the cost function. It is a stochastic gradient descent method. I specified the learning rate to \texttt{0.001}
+\item \texttt{loss = 'binary\_crossentropy'}. It specifies the cost function (or loss function) that will be used to evaluate how well the model is fitting the data during training. This cross-entropy loss is user for binary (0 or 1) classification applications.
+\item \texttt{metrics=[zero\_one\_loss\_func]}: this param specifies the evaluation metrics that will be calculated during model training. In this case I used a custom function called \texttt{zero\_one\_loss\_func}. It requires two parameters: \texttt{y\_true} , the real associated label and the \texttt{y\_pred}, the ones predicted by the model. Then:
+\begin{itemize}
+\item Transforms predicted probabilities into binary labels (0 or 1)
+\item Compare the predicted binary labels with the actual labels
+\item Calculate the zero-one loss as the average of the errors.
+\end{itemize}
+\end{itemize}
+The result of the experiments is reported in the Table \ref{table:cnn}.
 \section{Deep Residual learning (ResNet50)}
