@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  28 SEP 2023 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  28 SEP 2023 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,7 @@ LaTeX Info: Redefining \nameref on input line 89.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../Images/unimi.pdf): PDF in
 clusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../Images/unimi.pdf, id=70, 44.061pt x 44.11281pt>
+<../Images/unimi.pdf, id=78, 44.061pt x 44.11281pt>
 File: ../Images/unimi.pdf Graphic file (type pdf)
 <use ../Images/unimi.pdf>
 Package pdftex.def Info: ../Images/unimi.pdf  used on input line 92.
@@ -612,7 +612,7 @@ Chapter 2.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-<../Images/sampleimages.png, id=127, 593.21625pt x 609.27625pt>
+<../Images/sampleimages.png, id=137, 593.21625pt x 609.27625pt>
 File: ../Images/sampleimages.png Graphic file (type png)
 <use ../Images/sampleimages.png>
 Package pdftex.def Info: ../Images/sampleimages.png  used on input line 28.
@@ -621,7 +621,7 @@ Package pdftex.def Info: ../Images/sampleimages.png  used on input line 28.
 
 ]
 [3 <../Images/sampleimages.png>]
-<../Images/dataaug.png, id=162, 595.22375pt x 595.22375pt>
+<../Images/dataaug.png, id=172, 595.22375pt x 595.22375pt>
 File: ../Images/dataaug.png Graphic file (type png)
 <use ../Images/dataaug.png>
 Package pdftex.def Info: ../Images/dataaug.png  used on input line 46.
@@ -639,43 +639,71 @@ LaTeX Warning: Reference `ch:discussion' on page 6 undefined on input line 3.
 
 [6
 
-] [7]
-Overfull \hbox (54.35574pt too wide) in paragraph at lines 42--45
-[]\OT1/cmtt/m/n/12 outputs = layers.Dense(num[]classes, activation=activation)(
-x)\OT1/cmr/m/n/12 . num[]classes
- []
-
-[8] [9]
-<../Images/cnnarch.png, id=230, 682.55pt x 257.96375pt>
+] [7] [8] [9]
+<../Images/cnnarch.png, id=240, 682.55pt x 257.96375pt>
 File: ../Images/cnnarch.png Graphic file (type png)
 <use ../Images/cnnarch.png>
 Package pdftex.def Info: ../Images/cnnarch.png  used on input line 170.
 (pdftex.def)             Requested size: 341.27417pt x 128.98155pt.
  [10]
-Overfull \hbox (71.3351pt too wide) in paragraph at lines 176--177
+Overfull \hbox (71.3351pt too wide) in paragraph at lines 177--178
 []\OT1/cmtt/m/n/12 x = layers.Conv2D(128, 3, strides=2, padding="same", activat
 ion="relu")(x)\OT1/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (2.09294pt too wide) in paragraph at lines 177--178
+Overfull \hbox (2.09294pt too wide) in paragraph at lines 178--179
 []\OT1/cmtt/m/n/12 x = layers.MaxPooling2D(3, strides=2, padding="same")(x)\OT1
 /cmr/m/n/12 .This is a
  []
 
 
-Overfull \hbox (8.32669pt too wide) in paragraph at lines 182--183
+Overfull \hbox (8.32669pt too wide) in paragraph at lines 183--184
 []\OT1/cmtt/m/n/12 outputs = layers.Dense(num[]classes, activation=activation)(
 x)\OT1/cmr/m/n/12 .this
  []
 
 [11 <../Images/cnnarch.png>]
-Overfull \hbox (0.46066pt too wide) in paragraph at lines 187--188
+Overfull \hbox (0.46066pt too wide) in paragraph at lines 188--189
 []\OT1/cmtt/m/n/12 optimizer=keras.optimizers.Adam(1e-3)\OT1/cmr/m/n/12 . The o
 p-ti-mizer is the al-go-rithm
  []
 
-) (../Chapters/Experiments.tex [12]
+<../Images/resnet50arch.png, id=255, 1405.25pt x 452.69125pt>
+File: ../Images/resnet50arch.png Graphic file (type png)
+<use ../Images/resnet50arch.png>
+Package pdftex.def Info: ../Images/resnet50arch.png  used on input line 203.
+(pdftex.def)             Requested size: 421.57826pt x 135.80841pt.
+
+Overfull \hbox (3.32458pt too wide) in paragraph at lines 203--204
+ [][] 
+ []
+
+[12]
+Overfull \hbox (10.4151pt too wide) in paragraph at lines 208--215
+\OT1/cmtt/m/n/12 input[]tensor=Input(shape=input[]shape))\OT1/cmr/m/n/12 . Load
+s the ResNet50 pre-trained
+ []
+
+
+Overfull \hbox (4.40239pt too wide) in paragraph at lines 215--219
+\OT1/cmtt/m/n/12 predictions = Dense(num[]classes, activation='sigmoid')(x)\OT1
+/cmr/m/n/12 . It adds
+ []
+
+[13 <../Images/resnet50arch.png>]
+Overfull \hbox (6.09047pt too wide) in paragraph at lines 219--220
+[]\OT1/cmtt/m/n/12 model = Model(inputs=base[]model.input, outputs=predictions)
+\OT1/cmr/m/n/12 .Using
+ []
+
+
+Overfull \hbox (7.47498pt too wide) in paragraph at lines 220--222
+[]\OT1/cmtt/m/n/12 for layer in base[]model.layers: layer.trainable = False\OT1
+/cmr/m/n/12 .In this for
+ []
+
+) (../Chapters/Experiments.tex [14]
 Chapter 4.
 
 Overfull \hbox (0.80362pt too wide) in alignment at lines 4--9
@@ -702,7 +730,7 @@ Overfull \hbox (0.80362pt too wide) in alignment at lines 22--80
  [] [] [] [] [] [] 
  []
 
-[13
+[15
 
 ]
 Overfull \hbox (6.67856pt too wide) in alignment at lines 82--87
@@ -729,7 +757,7 @@ Overfull \hbox (6.67856pt too wide) in alignment at lines 100--157
  [] [] [] [] [] [] 
  []
 
-[14] [15] [16]) (./SMML-Samuele-Simone.bbl [17]
+[16] [17] [18]) (./SMML-Samuele-Simone.bbl [19]
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 []\OT1/cmr/m/n/12 Samuel Cort-in-has.  muffin-vs-chihuahua-image-classification
 .
@@ -758,23 +786,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--42
 tascience . com /
  []
 
-) [18
+) [20
 
 ] (./SMML-Samuele-Simone.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `SMML-Samuele-Simone.out' has not changed.
-(rerunfilecheck)             Checksum: 4E8C37659937B80EAF2FD7198EADCE83;1118.
+(rerunfilecheck)             Checksum: 8E85A9C63406C63292ADAC972148D812;1255.
  ) 
 Here is how much of TeX's memory you used:
- 17648 strings out of 478268
- 271881 string characters out of 5846347
- 807153 words of memory out of 5000000
- 35481 multiletter control sequences out of 15000+600000
+ 17664 strings out of 478268
+ 272199 string characters out of 5846347
+ 807189 words of memory out of 5000000
+ 35490 multiletter control sequences out of 15000+600000
  480463 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,8n,79p,659b,3435s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,8n,79p,1016b,3435s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -795,9 +823,9 @@ ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texliv
 e/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on SMML-Samuele-Simone.pdf (21 pages, 4571405 bytes).
+Output written on SMML-Samuele-Simone.pdf (23 pages, 4698059 bytes).
 PDF statistics:
- 389 PDF objects out of 1000 (max. 8388607)
- 85 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

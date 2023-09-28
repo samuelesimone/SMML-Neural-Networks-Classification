@@ -40,4 +40,8 @@ Mayank Mishra.
   \url{https://towardsdatascience.com/convolutional-neural-networks-explained-9cc5188c4939},
   2020.
 
+\bibitem{imagenet}
+Imagenet.
+\newblock \url{http://www.image-net.org}.
+
 \end{thebibliography}

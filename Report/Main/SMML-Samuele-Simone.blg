@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: SMML-Samuele-Simone.aux
 The style file: unsrt.bst
 Database file #1: bibliografia.bib
-You've used 7 entries,
+You've used 8 entries,
             1791 wiz_defined-function locations,
-            474 strings with 4411 characters,
-and the built_in function-call counts, 923 in all, are:
-= -- 77
-> -- 28
+            477 strings with 4457 characters,
+and the built_in function-call counts, 1023 in all, are:
+= -- 85
+> -- 29
 < -- 0
-+ -- 14
++ -- 15
 - -- 7
 * -- 9
-:= -- 149
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 7
+:= -- 158
+add.period$ -- 23
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 35
-empty$ -- 127
+cite$ -- 8
+duplicate$ -- 40
+empty$ -- 145
 format.name$ -- 7
-if$ -- 218
+if$ -- 245
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 8
 missing$ -- 0
-newline$ -- 38
+newline$ -- 42
 num.names$ -- 7
-pop$ -- 42
+pop$ -- 48
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 21
+skip$ -- 27
 stack$ -- 0
 substring$ -- 0
-swap$ -- 7
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 7
-width$ -- 8
-write$ -- 72
+width$ -- 9
+write$ -- 79

@@ -12,6 +12,8 @@
 \contentsline {subsection}{\numberline {3.2.4}Second MLP Model}{9}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Third MLP Model}{10}{subsection.3.2.5}%
 \contentsline {section}{\numberline {3.3}Convolutional Neural Network (CNN)}{10}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}CNN Model}{10}{subsection.3.3.1}%
 \contentsline {section}{\numberline {3.4}Deep Residual learning (ResNet50)}{12}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Experiments}{13}{chapter.4}%
-\contentsline {chapter}{References}{18}{chapter*.2}%
+\contentsline {subsection}{\numberline {3.4.1}ResNet50 Model}{13}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Experiments}{15}{chapter.4}%
+\contentsline {chapter}{References}{20}{chapter*.2}%

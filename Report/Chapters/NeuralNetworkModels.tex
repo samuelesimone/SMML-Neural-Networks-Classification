@@ -39,7 +39,7 @@ Here are the MLP architecture:
 \item \texttt{x = layers.Dense(128, activation='relu')(x)}: Other fully connected layer with 128 neurons and ReLU activation.
 \item \texttt{x = layers.Dropout(0.5)(x)}: Another dropout layer for further regularization.
 \item \texttt{activation = 'sigmoid'}: Here the activation function for the last layer is specified. In your case, you are using 'sigmoid,' which is commonly used in binary classification problems where the output must be a probability between 0 and 1 for each class.
-\item \texttt{outputs = layers.Dense(num\_classes, activation=activation)(x)}. 
+\item \texttt{outputs = layers.Dense(num\_classes, activation=activation)(x)}. \\
 num\_classes = 1. This is the last layer of the model, which returns the output.
 Then these are the technical details of the setup:
 \begin{itemize}
@@ -169,6 +169,7 @@ A \textbf{Convolutional Neural Network}, also known as CNN or ConvNet, is a clas
 \centering
 \includegraphics[scale=0.5]{../Images/cnnarch.png}
 \end{figure}
+\subsection{CNN Model}
 During the project, I trained a CNN model to solve the binary classification problem. Here are the details of the architecture:
 \begin{itemize}
 \item \texttt{inputs = tf.keras.Input(shape=input\_shape)}. Define a input layer for the model. 
@@ -195,3 +196,33 @@ Then these are the technical details of the setup:
 \end{itemize}
 The result of the experiments is reported in the Table \ref{table:cnn}.
 \section{Deep Residual learning (ResNet50)}
+ResNet-50 is a convolutional neural network that is 50 layers deep. You can load a pretrained version of the neural network trained on more than a million images from the ImageNet database \cite{imagenet}.The pretrained neural network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the neural network has learned rich feature representations for a wide range of images.The main innovation in ResNet is the introduction of \textbf{residual blocks}. In a residual block, the input is added to the output, allowing the model to learn the differences between the two rather than trying to learn the entire mapping. This makes training much more stable for very deep networks.ResNet-50 is often used for \textbf{transfer learning}.As a result, the model weights have already learned high-level representations that can be used for various computer vision tasks.
+\begin{figure}[hbtp]
+\caption{ResNet50 Architecture}
+\centering
+\includegraphics[scale=0.3]{../Images/resnet50arch.png}
+\end{figure}
+\subsection{ResNet50 Model}
+Here are the details of the architecture:
+\begin{itemize}
+\item \texttt{base\_model = ResNet50(} \\
+    \texttt{weights='imagenet',} \\
+    \texttt{include\_top=False,} \\
+    \texttt{input\_tensor=Input(shape=input\_shape))}. Loads the ResNet50 pre-trained model.\\ 
+ 	\texttt{weights='imagenet'} indicates that we want to use the pre-trained weights provided by ImageNet.\\
+  \texttt{include\_top=False} means that we do not want to include the fully connected layers (top layers) of the model, and \\
+   \texttt{input\_tensor=Input(shape=input\_shape)} specifies the shape of the input tensor.
+\item \texttt{x = base\_model.output}\\
+\texttt{x = GlobalAveragePooling2D()(x)} \\
+\texttt{x = Dense(256, activation='relu')(x)} \\
+\texttt{predictions = Dense(num\_classes, activation='sigmoid')(x)}. It adds a Global Average Pooling layer and a fully connected layer. Here, the output of the ResNet50 model is passed through a 2D Global Average Pooling layer, which averages the spatial features for each channel. Then, a second fully connected layer with 256 units and ReLU activation is added, followed by an output layer with a number of units equal to num\_classes and sigmoid activation. The latter layer will return the probabilities associated with each class.
+\item \texttt{model = Model(inputs=base\_model.input, outputs=predictions)}.Using the Model object, model inputs (the same inputs as the ResNet50 model) and outputs (the predictions tensor created in the previous step) are specified to create the final model.
+\item \texttt{for layer in base\_model.layers: layer.trainable = False}.In this for loop, all layers of the basic ResNet50 model are iterated and their weights are set as non-trainable (they will not be updated during training of the new model). This is useful when using pre-trained weights for feature extraction and you want to prevent them from being overwritten during training.
+\end{itemize}
+Then these are the technical details of the setup:
+\begin{itemize}
+\item \texttt{batch\_size =  32}. Indicates how many data examples are processed together before updating the weights.
+\item \texttt{optimizer=keras.optimizers.Adam(1e-3)}. The optimizer is the algorithm that adjusts the model weights during training to minimize the cost function. It is a stochastic gradient descent method. I specified the learning rate to \texttt{0.001}
+\item \texttt{loss = 'binary\_crossentropy'}. It specifies the cost function (or loss function) that will be used to evaluate how well the model is fitting the data during training. This cross-entropy loss is user for binary (0 or 1) classification applications.
+\item \texttt{metrics=['accuracy']}: this param specifies the evaluation metrics that will be calculated during model training. In this case I have the accuracy metric.
+\end{itemize}
