@@ -1,5 +1,5 @@
 \chapter{Neural Network Models} \label{ch:nnm}
-In this chapter we are going to examine the models that have been made in order to solve the binary classification task.
+In this Chapter we are going to examine the models that have been made in order to solve the binary classification task.
 All models were trained using the principle of K-Fold cross validation. In this case the \texttt{K = 5}. For the results of the experiments please refer to the Chapter \ref{ch:experiments} while for the discussion of the experiments please refer to the Chapter \ref{ch:discussion}.
 
 \section{K-fold cross validation (K = 5)}
@@ -38,9 +38,10 @@ Here are the MLP architecture:
 \item \texttt{x = layers.Dropout(0.5)(x)}: This dropout layer introduces regularization into the network. The parameter 0.5 indicates that 50\% of the neurons exiting this layer are randomly switched off during training.
 \item \texttt{x = layers.Dense(128, activation='relu')(x)}: Other fully connected layer with 128 neurons and ReLU activation.
 \item \texttt{x = layers.Dropout(0.5)(x)}: Another dropout layer for further regularization.
-\item \texttt{activation = 'sigmoid'}: Here the activation function for the last layer is specified. In your case, you are using 'sigmoid,' which is commonly used in binary classification problems where the output must be a probability between 0 and 1 for each class.
+\item \texttt{activation = 'sigmoid'}: Here the activation function for the last layer is specified. In this case, I'm using 'sigmoid,' which is commonly used in binary classification problems where the output must be a probability between 0 and 1 for each class.
 \item \texttt{outputs = layers.Dense(num\_classes, activation=activation)(x)}. \\
 num\_classes = 1. This is the last layer of the model, which returns the output.
+\end{itemize}
 Then these are the technical details of the setup:
 \begin{itemize}
 \item \texttt{batch\_size =  32}. Indicates how many data examples are processed together before updating the weights.
@@ -51,7 +52,6 @@ Then these are the technical details of the setup:
 \item Transforms predicted probabilities into binary labels (0 or 1)
 \item Compare the predicted binary labels with the actual labels
 \item Calculate the zero-one loss as the average of the errors.
-\end{itemize}
 \end{itemize}
 \end{itemize}
 \subsection{Hypertuning parameter for MLP}
@@ -134,7 +134,7 @@ Also in this case, the performance are not so high as reported in the Table. I e
 \end{tabular}
 \end{center}
 \subsection{Third MLP Model}
-The third MLP Model has 3 fully connected layers (512,256,128) with a Dropout for each layer of 0.3. Here the results:
+The third MLP Model has 3 fully connected layers with a Dropout for each layer of 0.3. Here the results:
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
